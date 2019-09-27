@@ -2,9 +2,44 @@
  * lay-out
  */
 
+.wrapper {
+  padding: 0 20px;
+  width: 100%;
+}
+
 /*
  * components
  */
+
+.header {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  display: flex;
+  &__logo {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    align-self: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__tools {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    &__cart {
+      text-align: center;
+      font-size: 10px;
+      align-self: center;
+      &__counter {
+        font-weight: bold;
+        font-size: 12px;
+      }
+    }
+  }
+}
 
 /*
  * styling
