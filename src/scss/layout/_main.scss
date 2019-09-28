@@ -7,16 +7,24 @@
   width: 100%;
 }
 
-/*
- * components
- */
-
 .header {
   position: fixed;
+  width: 100%;
+}
+
+.sub-header {
   height: 50px;
   width: 100%;
   border-bottom: 1px solid #000;
   display: flex;
+}
+
+/*
+ * components
+ */
+
+
+.site-navigation {
   &__logo {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
@@ -53,6 +61,7 @@
         height: 4px;
         width: 4px;
         background: #000;
+        border-radius: 50%;
       }
       &:before {
         top: -8px;
@@ -64,9 +73,30 @@
   }
 }
 
-.shop {
-  &__filter {
-    
+.shop-filter {
+  &__categories {
+    display: flex;
+    align-items: center;
+    &__item {
+      font-size: 10px;
+      font-weight: 800;
+      margin-top: 10px;
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+    }
+  }
+  &__advanced {
+    border: 1px solid #000;
+    font-size: 10px;
+    padding: 8px 15px;
+    background: transparent;
+    text-align: center;
+    align-items: flex-start;
+    align-self: center;
+    &__capitals {
+      text-transform: uppercase;
+    }
   }
 }
 
