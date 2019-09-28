@@ -38,6 +38,35 @@
         font-size: 12px;
       }
     }
+    &__menu-icon {
+      margin-left: 40px;
+      align-self: center;
+      height: 4px;
+      width: 4px;
+      background: #000;
+      border-radius: 50%;
+      position: relative;
+      cursor: pointer;
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 4px;
+        background: #000;
+      }
+      &:before {
+        top: -8px;
+      }
+      &:after {
+        top: 8px;
+      }
+    }
+  }
+}
+
+.shop {
+  &__filter {
+    
   }
 }
 
