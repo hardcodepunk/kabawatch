@@ -151,13 +151,26 @@
   position: relative;
   z-index: 90;
   width: 100%;
-  padding-top: 150px; 
+  padding-top: 150px;
+  &__text {
+    margin-bottom: 25px;
+    &__name {
+      font-size: 26px;
+    }
+    &__brand {
+      font-size: 12px;
+    }
+    &__price {
+      font-size: 10px;
+    }
+  }
   &__visual {
     width: 100%;
     background: #999;
     position: relative;
     overflow: hidden;
     height: auto;
+    margin-bottom: 30px;
     &:before {
       content: '';
       float: left;
