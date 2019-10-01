@@ -147,6 +147,31 @@
   }
 }
 
+.shop-item {
+  position: relative;
+  z-index: 90;
+  width: 100%;
+  padding-top: 150px; 
+  &__visual {
+    width: 100%;
+    background: #999;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    &:before {
+      content: '';
+      float: left;
+      padding-top: 66.66%;
+    }
+    &__img {
+      @include translateXY();
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
 .footer {
   background: #000;
   color: #fff;
