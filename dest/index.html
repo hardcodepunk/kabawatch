@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body menu-display">
 <header class="header">
   <div class="site-navigation wrapper sub-header">
     <a href="index.html" class="site-navigation__logo">Kabawatch</a>
     <div class="site-navigation__tools">
       <a href="#" class="site-navigation__tools__cart"><span id="cart-counter" class="site-navigation__tools__cart__counter">0</span><br>items in cart</a>
-      <span class="site-navigation__tools__menu-icon"></span>
+      <span class="site-navigation__tools__menu-icon js-toggle-menu"></span>
     </div>
   </div>
   <div class="shop-filter wrapper sub-header">
@@ -29,6 +29,21 @@
     <div class="shop-filter__advanced"><span class="shop-filter__advanced__capitals">Filter</span><br>Advanced</div>
   </div>
 </header>
+<div class="menu-overlay">
+  <div class="site-navigation wrapper sub-header">
+    <div class="site-navigation__tools">
+      <a href="#" class="site-navigation__tools__cart"><span id="cart-counter" class="site-navigation__tools__cart__counter">0</span><br>items in cart</a>
+      <span class="site-navigation__tools__menu-icon js-toggle-menu"></span>
+    </div>
+  </div>
+  <nav class="main-navigation wrapper">
+    <ul class="main-navigation__list">
+      <li class="main-navigation__list__item"><a href="index.html">Shop</a></span></li>
+      <li class="main-navigation__list__item"><a href="about.html">About</a></li>
+      <li class="main-navigation__list__item"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</div>
 <section class="shop">
   <ul class="shop__list">
     <li class="shop__list__item">

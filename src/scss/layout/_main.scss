@@ -80,6 +80,68 @@
   }
 }
 
+.menu-overlay {
+  display: none;
+  position: fixed;
+  width: 80%;
+  max-width: 250px;
+  height: 100%;
+  background: #fff;
+  z-index: 400;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  right: 0;
+  border-left: 1px solid #000;
+  .sub-header {
+    border-bottom: 1px solid transparent;
+  }
+  &__menu-icon {
+    margin-left: 40px;
+    align-self: center;
+    height: 4px;
+    width: 4px;
+    background: #000;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      height: 4px;
+      width: 4px;
+      background: #000;
+      border-radius: 50%;
+    }
+    &:before {
+      top: -8px;
+    }
+    &:after {
+      top: 8px;
+    }
+  }
+  .main-navigation {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    height: 100%;
+    width: 100%;
+    &__list {
+      margin-top: 70px;
+      &__item {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.open-menu {
+  .menu-overlay {
+    display: flex;
+  }
+}
+
 .shop-filter {
   &__categories {
     display: flex;
