@@ -104,6 +104,7 @@
     display: flex;
     height: 100%;
     width: 100%;
+    align-items: center;
     &__list {
       &__item {
         margin-bottom: 20px;
@@ -121,6 +122,7 @@
 }
 
 .open-advanced-filter {
+  overflow: hidden;
   .advanced-filter-overlay {
     display: flex;
   }
@@ -335,4 +337,8 @@
       top: 8px;
     }
   }
+}
+
+.input-group {
+  margin-bottom: 20px;
 }
