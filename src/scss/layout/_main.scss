@@ -88,8 +88,40 @@
   }
 }
 
+.advanced-filter-overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 300;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  .sub-header {
+    border-bottom: 1px solid transparent;
+  }
+  &__filters {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    &__list {
+      &__item {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
 .open-menu {
   .menu-overlay {
+    display: flex;
+  }
+}
+
+.open-advanced-filter {
+  .advanced-filter-overlay {
     display: flex;
   }
 }
