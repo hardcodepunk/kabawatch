@@ -48,6 +48,7 @@
       text-align: center;
       font-size: 10px;
       align-self: center;
+      cursor: pointer;
       &__counter {
         font-weight: bold;
         font-size: 12px;
@@ -125,8 +126,56 @@
   }
 }
 
+.cart-overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 700;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  &__top-bar {
+    position: fixed;
+    background: #fff;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    display: flex;
+    z-index: 350;
+    justify-content: flex-end;
+  }
+  &__tools {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    &__cart {
+      text-align: center;
+      font-size: 10px;
+      align-self: center;
+      cursor: pointer;
+      &__counter {
+        font-weight: bold;
+        font-size: 12px;
+      }
+    }
+  }
+  .close-button {
+    margin-left: 20px;
+    margin-right: -16px;
+  }
+}
+
 .open-menu {
   .menu-overlay {
+    display: flex;
+  }
+}
+
+.open-cart {
+  overflow: hidden;
+  .cart-overlay {
     display: flex;
   }
 }

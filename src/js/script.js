@@ -22,7 +22,7 @@ for (var i = 0; i < advancedFilterButtons.length; i++) {
   });
 }
 
-var cartButtons = document.querySelectorAll('.js-toggle-cart');
+var cartButtons = document.querySelectorAll('.js-toggle-cart-overlay');
 for (var i = 0; i < cartButtons.length; i++) {
   cartButtons[i].addEventListener('click', function() {
     if (menuToggle.classList.contains('open-cart')) {
