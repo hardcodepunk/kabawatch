@@ -128,7 +128,7 @@
         padding-bottom: 16px;
         text-transform: uppercase;
       }
-      &__btn {
+      a {
         //font-size: 16px;
         color: currentcolor;
         width: 100%;
@@ -146,9 +146,9 @@
         overflow: visible;
         -webkit-appearance: none;
       }
-      &__btn.is-checked {
+      a.is-checked {
         font-weight: 700;
-        &:after {
+        &:after { 
           content: '';
           display: block;
           @include translateY();
