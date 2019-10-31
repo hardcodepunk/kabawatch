@@ -45,24 +45,28 @@
   </nav>
 </div>
 <section class="shop-item wrapper">
-  <div class="shop-item__text">
-    <h2 class="shop-item__text__name">Sjieke naam</h2>
-    <h3 class="shop-item__text__brand">$wag merk</h3>
-    <h4 class="shop-item__text__price">€ 9999</h4>
-  </div>
-  <div class="shop-item__visual">
-    <img class="shop-item__visual__img" src="assets/img/watch.jpeg"/>
-  </div>
-  <button class="cta">Add to shopping cart</button>
-  <article class="shop-item__article">
-    <h5>Title</h5>
-    <p>Our love of the Omega Speedmaster and it's (recently reintroduced) Cal. 321 is no secret. The problem? We are not alone in loving it, and finding an accessible 321 Speedy is becoming harder than ever.</p>
-    <p>This reference 145.012-67SP, however, may give the budget conscious Speedy hunter hope!</p>
-    <p>The 145.012-67SP is the last of the breed to utilize the Calibre .321 column wheel chronograph movement by Lemania, a Reference 145.012-67. With its characteristic applied-logo dial and "Dot Over 90" bezel, this example shows the signs of a life well lived. The bezel has taken on a beautiful fade to it, the dial has aged to a creamy yellow, and the hands have darkened from years of use.</p>
-    <p>Is this a perfect time-capsule Speedmaster? No - and that is exactly what makes it the perfect piece for somebody looking to finally add that .321 powered Speedy to their collection.</p>
-    <h5>Title</h5>
-    <p>Our love of the Omega Speedmaster and it's (recently reintroduced) Cal. 321 is no secret. The problem? We are not alone in loving it, and finding an accessible 321 Speedy is becoming harder than ever.</p>
-  </article>
+  <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+    <div class="shop-item__text">
+      <h2 class="shop-item__text__name">Sjieke naam</h2>
+      <h3 class="shop-item__text__brand">$wag merk</h3>
+      <h4 class="shop-item__text__price">€ 9999</h4>
+    </div>
+    <div class="shop-item__visual">
+      <img class="shop-item__visual__img" src="assets/img/watch.jpeg"/>
+    </div>
+    <div class="add-to-cart-group">
+      <button class="cta">Add to shopping cart</button>
+    </div>
+    <article class="shop-item__article">
+      <h5>Title</h5>
+      <p>Our love of the Omega Speedmaster and it's (recently reintroduced) Cal. 321 is no secret. The problem? We are not alone in loving it, and finding an accessible 321 Speedy is becoming harder than ever.</p>
+      <p>This reference 145.012-67SP, however, may give the budget conscious Speedy hunter hope!</p>
+      <p>The 145.012-67SP is the last of the breed to utilize the Calibre .321 column wheel chronograph movement by Lemania, a Reference 145.012-67. With its characteristic applied-logo dial and "Dot Over 90" bezel, this example shows the signs of a life well lived. The bezel has taken on a beautiful fade to it, the dial has aged to a creamy yellow, and the hands have darkened from years of use.</p>
+      <p>Is this a perfect time-capsule Speedmaster? No - and that is exactly what makes it the perfect piece for somebody looking to finally add that .321 powered Speedy to their collection.</p>
+      <h5>Title</h5>
+      <p>Our love of the Omega Speedmaster and it's (recently reintroduced) Cal. 321 is no secret. The problem? We are not alone in loving it, and finding an accessible 321 Speedy is becoming harder than ever.</p>
+    </article>
+  </form>
 </section>
 <section class="shop">
   <ul class="shop__list">
