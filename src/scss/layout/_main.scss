@@ -235,6 +235,29 @@
           height: 100%;
         }
       }
+      &__meta {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+        &__tools {
+          &__cta {
+            padding: 0 20px;
+            border: 1px solid #000;
+            background: #fff;
+            display: block;
+            color: #000;
+            margin: 0;
+            font-size: 10px;
+            padding: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            &:hover {
+              background: #000;
+              color: #fff;
+            }
+          }
+        }
+      }
     }
   }
   &__sub-total {

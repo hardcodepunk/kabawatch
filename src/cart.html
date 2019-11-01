@@ -141,10 +141,18 @@
       <div class="cart__list__item__visual">
         <img class="cart__list__item__visual__img" src="assets/img/watch.jpeg"/>
       </div>
-      <div class="cart__list__item__text">
-        <h2>Sjieke naam</h2>
-        <h3>$wag merk</h3>
-        <h4>€ 9999</h4>
+      <div class="cart__list__item__meta">
+        <div class="cart__list__item__meta__text">
+          <h2>Sjieke naam</h2>
+          <h3>$wag merk</h3>
+          <h4>€ 9999</h4>
+        </div>
+        <div class="cart__list__item__meta__tools">
+          <div class="hidden-input-group">
+            <input type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0">
+          </div>
+          <button class="cart__list__item__meta__tools__cta" href="/cart/change?line={{ forloop.index }}&amp;quantity=0">Remove</button>
+        </div>
       </div>
     </li>
     <li class="cart__list__item">
