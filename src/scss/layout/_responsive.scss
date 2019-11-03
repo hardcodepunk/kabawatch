@@ -1,0 +1,49 @@
+@media only screen and (min-width: 470px) {
+  .advanced-filter-overlay {
+    max-width: 400px;
+    border-left: 1px solid #000;
+    &__top-bar, .bottom-bar {
+      max-width: 400px;
+      right: 0;
+      border-left: 1px solid #000;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  h2, .title-2 {
+    font-size: 14px;
+  }
+  h3, .title-3 {
+    font-size: 9px;
+  }
+
+  .shop__list__item {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .shop-item {
+    &__meta {
+      padding-right: 40px;
+      margin-bottom: 50px;
+    }
+    &__meta, &__article {
+      width: 50%;
+      float: left;
+    }
+    &__article {
+      margin-top: 0;
+    }
+  }
+  .shop {
+    clear: both;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .shop__list__item {
+    width: 25%;
+  }
+}
