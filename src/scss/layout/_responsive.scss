@@ -20,6 +20,15 @@
 
   .shop__list__item {
     width: 33.33%;
+    &__visual {
+      margin-bottom: 20px;
+    }
+    &__text {
+      p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
   }
 }
 
