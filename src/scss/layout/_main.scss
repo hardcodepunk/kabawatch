@@ -120,9 +120,13 @@
     background: #fff;
     width: 100%;
     padding: 20px;
+    padding-bottom: 140px;
     &__filter-group {
       padding: 20px 0;
       border-bottom: 1px solid #000;
+      &:last-child {
+        border-bottom: none;
+      }
       &__label {
         font-weight: 700;
         padding-top: 14px;
