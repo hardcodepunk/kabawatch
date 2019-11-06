@@ -87,6 +87,35 @@
           </div>
         </li>
       </ul>
+      <input type="number" id="Quantity" name="quantity" value="1" min="1">
+      <div class="product-variants infiniteoptions">
+        <ul>
+      	  <li class="{% cycle 'odds': 'odd', 'even' %}">
+      		  <input type="radio" name="id" value="variant" id="radio_variant" checked="checked" />
+    			  <label for="radio_variant" class="radio">
+    				  <strong>variant</strong> for <span class="bold-blue">€ 9999</span>
+    			  </label>
+          </li>
+          <li class="{% cycle 'odds': 'odd', 'even' %}">
+      		  <input type="radio" name="id" value="variant" id="radio_variant"/>
+    			  <label for="radio_variant" class="radio">
+    				  <strong>variant</strong> for <span class="bold-blue">€ 9999</span>
+    			  </label>
+          </li>
+          <li class="{% cycle 'odds': 'odd', 'even' %}">
+      		  <input type="radio" name="id" value="variant" id="radio_variant"/>
+    			  <label for="radio_variant" class="radio">
+    				  <strong>variant</strong> for <span class="bold-blue">€ 9999</span>
+    			  </label>
+          </li>
+          <li>
+    			  <input type="radio" name="id" value="variant" id="radio_variant" disabled="disabled" />
+    			  <label for="radio_variant" class="radio">
+    				  <strong>variant</strong> is temporarily unavailable
+    			  </label>
+      	  </li>
+        </ul>
+      </div>
       <div class="add-to-cart-group">
         <button class="cta">Add to shopping cart</button>
       </div>
