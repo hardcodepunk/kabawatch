@@ -432,6 +432,44 @@
   }
 }
 
+.shop-item {
+  &__gallery {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    &__item {
+      margin-right: 4px;
+      min-width: 25%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      &__visual {
+        width: 100%;
+        height: auto;
+        position: relative;
+        background: #fff;
+        &:before {
+          content: '';
+          float: left;
+          padding-top: 66.66%;
+        }
+        &__img {
+          @include translateXY();
+          position: absolute;
+          height: 100%;
+          width: 100%;
+        }
+        &__img.being-displayed {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
 .item-page {
   .shop {
     padding: 0 0 50px;

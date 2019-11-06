@@ -32,3 +32,20 @@ for (var i = 0; i < cartButtons.length; i++) {
     }
   });
 }*/
+
+var sliderImgs = document.querySelectorAll('.js-display-slider-img');
+var sliderProjection = document.getElementById('slider-projection');
+for (var i = 0; i < sliderImgs.length; i++) {
+  sliderImgs[i].addEventListener('click', function() {
+
+    if (this.classList.contains('being-displayed')) {
+
+    } else {
+      for (var i = 0; i < sliderImgs.length; i++) {
+        sliderImgs[i].classList.remove('being-displayed');
+      }
+      this.classList.add('being-displayed');
+      sliderProjection.src = this.src;
+    }
+  });
+}
