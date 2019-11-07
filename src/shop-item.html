@@ -87,31 +87,33 @@
           </div>
         </li>
       </ul>
-      <input type="number" id="Quantity" name="quantity" value="1" min="1">
+      <div class="number-input-group">
+        <input type="number" id="Quantity" name="quantity" value="1" min="1">
+      </div>
       <div class="product-variants infiniteoptions">
-        <ul>
+        <ul class="radio-input-group">
       	  <li class="{% cycle 'odds': 'odd', 'even' %}">
-      		  <input type="radio" name="id" value="variant" id="radio_variant" checked="checked" />
-    			  <label for="radio_variant" class="radio">
-    				  <strong>variant</strong> for <span class="bold-blue">€ 9999</span>
+      		  <input type="radio" name="id" value="variant" id="blue" checked="checked" />
+    			  <label for="blue" class="radio">
+    				  Blue
     			  </label>
           </li>
           <li class="{% cycle 'odds': 'odd', 'even' %}">
-      		  <input type="radio" name="id" value="variant" id="radio_variant"/>
-    			  <label for="radio_variant" class="radio">
-    				  <strong>variant</strong> for <span class="bold-blue">€ 9999</span>
+      		  <input type="radio" name="id" value="variant" id="red"/>
+    			  <label for="red" class="radio">
+    				  Red
     			  </label>
           </li>
           <li class="{% cycle 'odds': 'odd', 'even' %}">
-      		  <input type="radio" name="id" value="variant" id="radio_variant"/>
-    			  <label for="radio_variant" class="radio">
-    				  <strong>variant</strong> for <span class="bold-blue">€ 9999</span>
+      		  <input type="radio" name="id" value="variant" id="grey"/>
+    			  <label for="grey" class="radio">
+    				  Grey
     			  </label>
           </li>
           <li>
-    			  <input type="radio" name="id" value="variant" id="radio_variant" disabled="disabled" />
-    			  <label for="radio_variant" class="radio">
-    				  <strong>variant</strong> is temporarily unavailable
+    			  <input type="radio" name="id" value="variant" id="unavailable" disabled="disabled" />
+    			  <label for="unavailable" class="radio">
+    				  Unavailable
     			  </label>
       	  </li>
         </ul>
