@@ -164,10 +164,11 @@
           <h2>Sjieke naam</h2>
           <h3>$wag merk</h3>
           <h4>€ 9999</h4>
+          <span class="cart__list__item__meta__text__variant">Blue</span>
         </div>
         <div class="cart__list__item__meta__tools">
-          <div class="hidden-input-group">
-            <input type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0">
+          <div class="number-input-group">
+            <input type="number" id="Quantity" name="quantity" value="1" min="1">
           </div>
           <button class="cart__list__item__meta__tools__cta" href="/cart/change?line={{ forloop.index }}&amp;quantity=0">Remove</button>
         </div>
