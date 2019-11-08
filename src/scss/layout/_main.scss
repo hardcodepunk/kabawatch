@@ -403,7 +403,7 @@
 
 .cart {
   position: relative;
-  padding: 140px 20px 70px;
+  padding: 140px 20px 140px;
   width: 100%;
   max-width: 600px;
   &__list {
@@ -479,7 +479,6 @@
     }
   }
   &__sub-total {
-    color: #fff;
     display: flex;
     align-items: flex-start;
     max-width: 200px;
