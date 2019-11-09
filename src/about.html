@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KABAWATCH</title>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800&display=swap" rel="stylesheet">
+</head>
+<body class="body menu-display">
+<!-- header -->
+<header class="header">
+  <div class="site-navigation wrapper sub-header">
+    <a href="index.html" class="site-navigation__logo">Kabawatch</a>
+    <div class="site-navigation__tools">
+      <a class="site-navigation__tools__cart js-toggle-cart-overlay" href="cart.html"><span id="cart-counter" class="site-navigation__tools__cart__counter">0</span><br>items in cart</a>
+      <div class="menu-button js-toggle-menu"><span class="menu-button__icon"></span></div>
+    </div>
+  </div>
+  <div class="shop-filter wrapper sub-header">
+    <ul class="shop-filter__categories list--horizontal">
+      <li class="shop-filter__categories__item is-selected">All<span class="shop-filter__categories__item__arrow"></span></li>
+      <li class="shop-filter__categories__item">Men<span class="shop-filter__categories__item__arrow"></span></li>
+      <li class="shop-filter__categories__item">Women<span class="shop-filter__categories__item__arrow"></span></li>
+      <li class="shop-filter__categories__item">Straps<span class="shop-filter__categories__item__arrow"></span></li>
+      <li class="shop-filter__categories__item">Accessories<span class="shop-filter__categories__item__arrow"></span></li>
+    </ul>
+    <div class="shop-filter__advanced js-toggle-advanced-filter"><span class="shop-filter__advanced__capitals">Filter</span><br>Advanced</div>
+  </div>
+</header>
+<!-- menu overlay -->
+<div class="menu-overlay">
+  <div class="site-navigation wrapper sub-header">
+    <div class="site-navigation__tools">
+      <a class="site-navigation__tools__cart js-toggle-cart-overlay" href="cart.html"><span id="cart-counter" class="site-navigation__tools__cart__counter">0</span><br>items in cart</a>
+      <div class="close-button js-toggle-menu"><span class="close-button__icon"></span></div>
+    </div>
+  </div>
+  <nav class="main-navigation wrapper">
+    <ul class="main-navigation__list">
+      <li class="main-navigation__list__item"><a href="index.html">Shop</a></li>
+      <li class="main-navigation__list__item"><a href="about.html">About</a></li>
+      <li class="main-navigation__list__item"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+<!-- cart overlay
+<div class="cart-overlay">
+  <div class="cart-overlay__top-bar wrapper">
+    <a href="index.html" class="site-navigation__logo">Kabawatch</a>
+    <div class="site-navigation__tools">
+      <a class="site-navigation__tools__cart js-toggle-cart-overlay" href="cart.html"><span id="cart-counter" class="site-navigation__tools__cart__counter">0</span><br>items in cart</a>
+      <div class="close-button js-toggle-cart-overlay"><span class="close-button__icon"></span></div>
+    </div>
+  </div>
+  <section class="cart">
+    <h1>Your cart</h1>
+    <ul class="cart__list">
+      <li class="cart__list__item">
+        <div class="cart__list__item__visual">
+          <img class="cart__list__item__visual__img" src="assets/img/watch.jpeg"/>
+        </div>
+        <div class="cart__list__item__text">
+          <h2>Sjieke naam</h2>
+          <h3>$wag merk</h3>
+          <h4>€ 9999</h4>
+        </div>
+      </li>
+      <li class="cart__list__item">
+        <div class="cart__list__item__visual">
+          <img class="cart__list__item__visual__img" src="assets/img/watch.jpeg"/>
+        </div>
+        <div class="cart__list__item__text">
+          <h2>Sjieke naam</h2>
+          <h3>$wag merk</h3>
+          <h4>€ 9999</h4>
+        </div>
+      </li>
+    </ul>
+    <div class="bottom-bar">
+      <div class="cart__sub-total">
+        <h2 class="cart__sub-total__title">Subtotal</h2><h2 class="cart__sub-total__number">€ 19998</h2>
+      </div>
+      <div class="input-submit wrapper">
+        <input class="cta" type="submit" value="Check out">
+      </div>
+    </div>
+  </section>
+</div>-->
+<!-- filter overlay -->
+<div class="advanced-filter-overlay">
+  <div class="advanced-filter-overlay__top-bar">
+    <div class="close-button js-toggle-advanced-filter"><span class="close-button__icon"></span></div>
+  </div>
+  <div class="advanced-filter-overlay__filters">
+    <div class="advanced-filter-overlay__filters__filter-group">
+      <h2 class="advanced-filter-overlay__filters__filter-group__label">Sort by:</h2>
+      <a class="advanced-filter-overlay__filters__filter-group__btn is-checked">Price: Low - High</a>
+      <a class="advanced-filter-overlay__filters__filter-group__btn">Price: High - Low</a>
+      <a class="advanced-filter-overlay__filters__filter-group__btn">A-Z</a>
+      <a class="advanced-filter-overlay__filters__filter-group__btn">Z-A</a>
+      <a class="advanced-filter-overlay__filters__filter-group__btn">Oldest first</a>
+      <a class="advanced-filter-overlay__filters__filter-group__btn">Newest first</a>
+    </div>
+    <div class="advanced-filter-overlay__filters__filter-group">
+      <h2 class="advanced-filter-overlay__filters__filter-group__label">Brand</h2>
+      <a class="advanced-filter-overlay__filters__filter-group__btn is-checked">Breitling</a>
+      <a class="advanced-filter-overlay__filters__filter-group__btn is-checked">Cartier</a>
+      <a class="advanced-filter-overlay__filters__filter-group__btn">Jaeger-LeCoultre</a>
+      <a class="advanced-filter-overlay__filters__filter-group__btn is-checked">Longines</a>
+      <a class="advanced-filter-overlay__filters__filter-group__btn">Omega</a>
+      <a class="advanced-filter-overlay__filters__filter-group__btn">Rolex</a>
+      <a class="advanced-filter-overlay__filters__filter-group__btn">Tissot</a
+      <a class="advanced-filter-overlay__filters__filter-group__btn">Tudor</a>
+      <a class="advanced-filter-overlay__filters__filter-group__btn">Universal Geneve</a>
+      <a class="advanced-filter-overlay__filters__filter-group__btn">Zenith</a>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <button class="cta js-toggle-advanced-filter">Apply filters</button>
+  </div>
+</div>
+<section class="section">
+  <article class="wrapper">
+    <h1>A collector turned pro.</h1>
+    <p>
+      After years of collecting and building my expertise, I’ve turned my passion into my full-time job.
+      My goal is to make vintage watch collecting more accessible and transparent for everyone involved.
+    </p>
+    <p>
+      I mostly focus on vintage Omega, and branch out into a few other luxury brands as well. I value originality and honesty, and as such guarantee that you get what’s promised. I expertly inspect every watch and authenticate them.
+    </p>
+    <p>
+      When I first started collecting, I noticed the watch scene can be a minefield: shady sellers or people without any knowledge whatsoever, fake watches, marriage/frankenwatches, and very high prices with professional sellers – usually without any guarantees that the watch is actually legitimate. So I did what any man with too much time on his hands would do; I started learning as much as I can about every single thing. I focused only on Omega,
+    </p>
+  </article>
+</section>
+<!-- footer -->
+<footer class="footer wrapper">
+  <a href="#" class="footer__logo">Kabawatch</a>
+</footer>
+<!-- scripts -->
+<script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -19,6 +19,14 @@
   height: 80px;
 }
 
+.section {
+  padding-top: 150px;
+  margin-bottom: 100px;
+  article {
+    max-width: 600px;
+  }
+}
+
 .sub-header {
   height: 50px;
   width: 100%;
@@ -726,6 +734,8 @@
     margin: 50px 0;
   }
 }
+
+
 
 .footer {
   background: #000;
