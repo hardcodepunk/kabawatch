@@ -735,7 +735,24 @@
   }
 }
 
-
+.contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  input[type="text"], input[type="tel"], input[type="email"], textarea {
+    display: flex;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 4px 4px 4px 0;
+    font-size: 12px;
+    border: 1px solid #000;
+    font-family: 'Raleway', sans-serif;
+  }
+  textarea {
+    margin-bottom: 20px;
+    resize: vertical;
+  }
+}
 
 .footer {
   background: #000;

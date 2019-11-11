@@ -123,18 +123,18 @@
   </div>
 </div>
 <section class="section">
-  <h1>Contact</h1>
-  <form>
-    <label for="ContactFormName">name</label>
-    <input type="text" id="ContactFormName" name="contact[name]">
-    <label for="ContactFormEmail">email</label>
-    <input type="email" id="ContactFormEmail" name="contact[email]">
-    <label for="ContactFormPhone">phone</label>
-    <input type="tel" id="ContactFormPhone" name="contact[phone]">
-    <label for="ContactFormMessage">message</label>
-    <textarea rows="10" id="ContactFormMessage" name="contact[body]"></textarea>
-    <input type="submit" value="send">
-  </form>
+  <div class="contact wrapper">
+    <h1>Contact</h1>
+    <!--  <label for="ContactFormName">name</label> -->
+    <input type="text" id="ContactFormName" name="contact[name]" placeholder="Your full name">
+    <!--<label for="ContactFormEmail">email</label>-->
+    <input type="email" id="ContactFormEmail" name="contact[email]" placeholder="Your e-mail">
+    <!--<label for="ContactFormPhone">phone</label>-->
+    <input type="tel" id="ContactFormPhone" name="contact[phone]" placeholder="Your phone number">
+    <!--<label for="ContactFormMessage">message</label>-->
+    <textarea rows="10" id="ContactFormMessage" name="contact[body]" placeholder="You're welcome to type your message in this box"></textarea>
+    <input class="cta" type="submit" value="Send">
+  </div>
 </section>
 <!-- footer -->
 <footer class="footer wrapper">
