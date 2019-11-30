@@ -1,3 +1,39 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3838742, 2019-11-19T07:16:54-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: FF Mark Web Pro Regular by FontFont
+ * URL: https://www.myfonts.com/../fonts/fontfont/mark/pro-regular/
+ * Copyright: 2016 published by Monotype GmbH
+ *
+ * Webfont: FF Mark Web Pro Bold by FontFont
+ * URL: https://www.myfonts.com/../fonts/fontfont/mark/pro-bold/
+ * Copyright: 2013 published by FontShop International GmbH
+ *
+ * Webfont: FF Mark Web Pro Heavy by FontFont
+ * URL: https://www.myfonts.com/../fonts/fontfont/mark/pro-heavy/
+ * Copyright: 2013 published by FontShop International GmbH
+ *
+ *
+ * Licensed pageviews: 50,000
+ *
+ * © 2019 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3a9316");
+
+@font-face {font-family: 'FFMarkWebProRegular';src: url('../fonts/3A9316_0_0.eot');src: url('../fonts/3A9316_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3A9316_0_0.woff2') format('woff2'),url('../fonts/3A9316_0_0.woff') format('woff'),url('../fonts/3A9316_0_0.ttf') format('truetype');}
+@font-face {font-family: 'FFMarkWebProBold';src: url('../fonts/3A9316_1_0.eot');src: url('../fonts/3A9316_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3A9316_1_0.woff2') format('woff2'),url('../fonts/3A9316_1_0.woff') format('woff'),url('../fonts/3A9316_1_0.ttf') format('truetype');}
+@font-face {font-family: 'FFMarkWebProHeavy';src: url('../fonts/3A9316_2_0.eot');src: url('../fonts/3A9316_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3A9316_2_0.woff2') format('woff2'),url('../fonts/3A9316_2_0.woff') format('woff'),url('../fonts/3A9316_2_0.ttf') format('truetype');}
+
+
 // =============================================
 // Mixin - Typography
 // =============================================
@@ -5,7 +41,6 @@
 @mixin title-1 {
   margin: 0;
   margin-bottom: 14px;
-  font-weight: 400;
   font-size: 20px;
   text-rendering: optimizeLegibility;
   line-height: 27px;
@@ -14,7 +49,6 @@
 @mixin title-2 {
   margin: 0;
   margin-bottom: 7px;
-  font-weight: 400;
   font-size: 12px;
   text-rendering: optimizeLegibility;
 }
@@ -22,7 +56,7 @@
 @mixin title-3 {
   margin: 0;
   margin-bottom: 9px;
-  font-weight: 700;
+  font-family: 'FFMarkWebProBold';
   font-size: 7px;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
@@ -30,7 +64,6 @@
 
 @mixin title-4 {
   margin: 0;
-  font-weight: 400;
   font-size: 10px;
   text-rendering: optimizeLegibility;
 }
@@ -38,7 +71,7 @@
 @mixin title-5 {
   margin: 0;
   margin-bottom: 18px;
-  font-weight: 700;
+  font-family: 'FFMarkWebProBold';
   font-size: 17px;
   line-height: 22px;
   letter-spacing: 1px;
@@ -48,7 +81,6 @@
 @mixin title-6 {
   margin: 0;
   margin-bottom: 25px;
-  font-weight: 400;
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 1px;

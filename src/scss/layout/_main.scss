@@ -45,7 +45,7 @@
   max-width: 270px;
   margin: 0 auto;
   width: 100%;
-  font-weight: 700;
+  font-family: 'FFMarkWebProBold';
   font-size: 12px;
   padding: 20px 0;
   cursor: pointer;
@@ -144,7 +144,7 @@
     color: #000;
     margin: 0 auto;
     width: 100%;
-    font-weight: 700;
+    font-family: 'FFMarkWebProBold';
     font-size: 12px;
     padding: 20px 0;
     cursor: pointer;
@@ -232,7 +232,6 @@
 
 .site-navigation {
   &__logo {
-    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     align-self: center;
     font-size: 15px;
@@ -249,7 +248,7 @@
       align-self: center;
       cursor: pointer;
       &__counter {
-        font-weight: bold;
+        font-family: 'FFMarkWebProBold';
         font-size: 12px;
       }
     }
@@ -327,7 +326,7 @@
         border-bottom: none;
       }
       &__label {
-        font-weight: 700;
+        font-family: 'FFMarkWebProBold';
         padding-top: 14px;
         padding-bottom: 12px;
         text-transform: uppercase;
@@ -351,7 +350,7 @@
         -webkit-appearance: none;
       }
       a.is-checked {
-        font-weight: 700;
+        font-family: 'FFMarkWebProBold';
         &:after {
           content: '';
           display: block;
@@ -542,7 +541,7 @@
     align-items: center;
     &__item {
       font-size: 10px;
-      font-weight: 800;
+      font-family: 'FFMarkWebProHeavy';
       margin-top: 10px;
       position: relative;
       text-align: center;
