@@ -685,10 +685,10 @@
           height: 100%;
           width: 100%;
         }
-        &__img.being-displayed {
-          opacity: 0.7;
-        }
       }
+    }
+    &__item.is-being-displayed {
+      opacity: 0.7;
     }
   }
   &__article {

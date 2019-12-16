@@ -22,19 +22,20 @@ for (var i = 0; i < advancedFilterButtons.length; i++) {
   });
 }
 
-var sliderImgs = document.querySelectorAll('.js-display-slider-img');
+var sliderItems = document.querySelectorAll('.shop-item__gallery__item');
 var sliderProjection = document.getElementById('slider-projection');
-for (var i = 0; i < sliderImgs.length; i++) {
-  sliderImgs[i].addEventListener('click', function() {
-
-    if (this.classList.contains('being-displayed')) {
+for (var i = 0; i < sliderItems.length; i++) {
+  sliderItems[i].addEventListener('click', function() {
+    console.log(this);
+    if (this.classList.contains('is-being-displayed')) {
 
     } else {
-      for (var i = 0; i < sliderImgs.length; i++) {
-        sliderImgs[i].classList.remove('being-displayed');
+      for (var i = 0; i < sliderItems.length; i++) {
+        sliderItems[i].classList.remove('is-being-displayed');
       }
-      this.classList.add('being-displayed');
-      sliderProjection.src = this.src;
+      this.classList.add('is-being-displayed');
+      sliderProjection.src = this.querySelector('.shop-item__gallery__item__visual__img').src;
+      var img = this.querySelector('.shop-item__gallery__item__visual__img');
     }
   });
 }
