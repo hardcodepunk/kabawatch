@@ -32,17 +32,22 @@
   }
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 960px) {
+  .show {
+    margin-bottom: 70px;
+  }
   .shop-item {
     &__meta {
-      padding-right: 40px;
-      margin-bottom: 50px;
+      width: 40%;
     }
     &__meta, &__article {
-      width: 50%;
-      float: left;
+      float: right;
     }
     &__article {
+      width: 60%;
+    }
+    &__article, &__text {
+      padding-left: 10%;
       margin-top: 0;
     }
   }
