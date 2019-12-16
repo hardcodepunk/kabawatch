@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "lint": "eslint src/js/*.js",
-    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '&gt; 5%, ie 9' -r dest/assets/css/*",
+    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers '&gt; 5%, ie 9' -r dest/assets/css/*.css",
     "build:html": "cp src/*.html dest/",
     "build:js": "cp src/js/* dest/assets/js/script.js",
     "build:css": "node-sass --output-style compressed src/scss/styles.scss -o dest/assets/css/ && npm run autoprefixer",

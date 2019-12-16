@@ -22,17 +22,6 @@ for (var i = 0; i < advancedFilterButtons.length; i++) {
   });
 }
 
-/*var cartButtons = document.querySelectorAll('.js-toggle-cart-overlay');
-for (var i = 0; i < cartButtons.length; i++) {
-  cartButtons[i].addEventListener('click', function() {
-    if (menuToggle.classList.contains('open-cart')) {
-      menuToggle.classList.remove('open-cart');
-    } else {
-      menuToggle.classList.add('open-cart');
-    }
-  });
-}*/
-
 var sliderImgs = document.querySelectorAll('.js-display-slider-img');
 var sliderProjection = document.getElementById('slider-projection');
 for (var i = 0; i < sliderImgs.length; i++) {
