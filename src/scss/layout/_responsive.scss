@@ -32,6 +32,15 @@
   }
 }
 
+@media only screen and (min-width: 700px) {
+  .menu-button {
+    display: none;
+  }
+  .site-navigation__menu {
+    display: flex;
+  }
+}
+
 @media only screen and (min-width: 960px) {
   .show {
     margin-bottom: 70px;

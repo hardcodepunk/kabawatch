@@ -253,6 +253,15 @@
       }
     }
   }
+  &__menu {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    &__item {
+      font-size: 13px;
+      margin-right: 34px;
+    }
+  }
 }
 
 .menu-overlay {
