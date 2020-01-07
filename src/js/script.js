@@ -39,3 +39,12 @@ for (var i = 0; i < sliderItems.length; i++) {
     }
   });
 }
+
+var shopPreviewImgs = document.querySelectorAll('.shop__list__item__visual');
+var shopListItems = document.querySelectorAll('.shop__list__item');
+window.addEventListener("resize", function(){
+  shopListItemWidth = shopListItems.offsetHeight;
+    for (var i = 0; i < shopPreviewImgs.length; i++) {
+      shopPreviewImgs.style.height = shopListItemWidth;
+  }
+});
