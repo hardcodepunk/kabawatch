@@ -39,6 +39,18 @@
   .site-navigation__menu {
     display: flex;
   }
+  .shop-filter {
+    &__categories {
+      &__item {
+        font-size: 12px;
+        &:hover, &.is-selected {
+          .shop-filter__categories__item__arrow {
+            bottom: -19px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 960px) {
