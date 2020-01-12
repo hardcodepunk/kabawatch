@@ -47,17 +47,17 @@
     <div class="shop-item__visual">
       <img id="slider-projection" class="shop-item__visual__img" src="assets/img/watch.jpeg"/>
     </div>
-    <ul class="shop-item__gallery">
-      <div class="shop-item__gallery__controls">
-        <div class="shop-item__gallery__controls__btn">
-          <div class="shop-item__gallery__controls__btn__circles"></div>
-        </div>
-        <div class="shop-item__gallery__controls__pagination">1 / 17</div>
-        <div class="shop-item__gallery__controls__btn shop-item__gallery__controls__btn--right">
-          <div class="shop-item__gallery__controls__btn__circles shop-item__gallery__controls__btn__circles"></div>
-        </div>
+    <div class="shop-item__gallery-controls">
+      <div id="gallery__btn-previous" class="shop-item__gallery-controls__btn is-hidden">
+        <div class="shop-item__gallery-controls__btn__circles"></div>
       </div>
-      <!--<li class="shop-item__gallery__item js-display-slider-img is-being-displayed">
+      <div class="shop-item__gallery-controls__pagination">1 / 17</div>
+      <div id="gallery__btn-next" class="shop-item__gallery-controls__btn shop-item__gallery-controls__btn--right">
+        <div class="shop-item__gallery-controls__btn__circles shop-item__gallery-controls__btn__circles"></div>
+      </div>
+    </div>
+    <ul class="shop-item__gallery">
+      <li class="shop-item__gallery__item js-display-slider-img is-being-displayed">
         <div class="shop-item__gallery__item__visual">
           <img class="shop-item__gallery__item__visual__img" src="https://loremflickr.com/640/480"/>
         </div>
@@ -87,7 +87,7 @@
           <img class="shop-item__gallery__item__visual__img" src="https://loremflickr.com/640/480"/>
         </div>
       </li>
-    </ul>-->
+    </ul>
   </div>
   <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
     <div class="wrapper">

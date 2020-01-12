@@ -651,6 +651,9 @@
       object-fit: cover;
     }
   }
+  &__gallery-controls {
+    display: none;
+  }
   &__gallery {
     position: absolute;
     top: 0;
