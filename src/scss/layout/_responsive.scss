@@ -149,10 +149,18 @@
         justify-content: center;
         align-items: center;
         height: 34px;
+        min-width: 70px;
         font-size: 14px;
         background: #fff;
         border: 1px solid #000;
         padding: 0 10px;
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-width: 10px;
+          margin: 0 2px;
+        }
       }
     }
     &__gallery {

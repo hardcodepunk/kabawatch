@@ -36,9 +36,24 @@ for (var i = 0; i < sliderItems.length; i++) {
       sliderProjection.src = this.querySelector('.shop-item__gallery__item__visual__img').src;
       var img = this.querySelector('.shop-item__gallery__item__visual__img');
 
-      var displayedItem = document.querySelector('li.shop-item__gallery__item.is-being-displayed');
-      var currentLocation = sliderItemsArray.indexOf(displayedItem) + 1;
+      displayedItem = document.querySelector('li.shop-item__gallery__item.is-being-displayed');
+      currentLocation = sliderItemsArray.indexOf(displayedItem) + 1;
       paginationElementCurrent.innerHTML = currentLocation;
+
+      var previousItem = displayedItem.previousElementSibling;
+      var nextItem = displayedItem.nextElementSibling;
+
+      for (var i = 0; i < galleryBtns.length; i++) {
+        galleryBtns[i].classList.remove('is-hidden');
+      }
+
+      if ( nextItem == null ) {
+        btnNext.classList.add('is-hidden');
+      }
+
+      if (previousItem == null) {
+        btnPrevious.classList.add('is-hidden');
+      }
     }
   });
 }
@@ -110,6 +125,7 @@ for (var i = 0; i < galleryBtns.length; i++) {
       }
 
       currentLocation -= 1;
+
       paginationElementCurrent.innerHTML = currentLocation;
 
     // next btn clicked
