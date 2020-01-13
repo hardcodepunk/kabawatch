@@ -142,6 +142,7 @@
       }
       &__btn.is-hidden {
         visibility: hidden;
+        cursor: auto;
       }
       &__pagination {
         display: flex;

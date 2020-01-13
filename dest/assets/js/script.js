@@ -26,7 +26,6 @@ var sliderItems = document.querySelectorAll('.shop-item__gallery__item');
 var sliderProjection = document.getElementById('slider-projection');
 for (var i = 0; i < sliderItems.length; i++) {
   sliderItems[i].addEventListener('click', function() {
-    console.log(this);
     if (this.classList.contains('is-being-displayed')) {
 
     } else {
@@ -36,6 +35,10 @@ for (var i = 0; i < sliderItems.length; i++) {
       this.classList.add('is-being-displayed');
       sliderProjection.src = this.querySelector('.shop-item__gallery__item__visual__img').src;
       var img = this.querySelector('.shop-item__gallery__item__visual__img');
+
+      var displayedItem = document.querySelector('li.shop-item__gallery__item.is-being-displayed');
+      var currentLocation = sliderItemsArray.indexOf(displayedItem) + 1;
+      paginationElementCurrent.innerHTML = currentLocation;
     }
   });
 }
@@ -44,7 +47,6 @@ var shopPreviewImgs = document.querySelectorAll('.shop__list__item__visual');
 var shopListItem = document.querySelector('.shop__list__item');
 window.addEventListener("resize", function(){
   shopListItemWidth = shopListItem.offsetHeight;
-  console.log(shopListItemWidth);
   for (var i = 0; i < shopPreviewImgs.length; i++) {
     shopPreviewImgs[i].style.height = shopListItemWidth;
   }
@@ -72,30 +74,34 @@ var galleryBtns = document.querySelectorAll('.shop-item__gallery-controls__btn')
 var btnPrevious = document.getElementById('gallery__btn-previous');
 var btnNext = document.getElementById('gallery__btn-next');
 
+var displayedItem = document.querySelector('li.shop-item__gallery__item.is-being-displayed');
+var sliderItemsArray = Array.prototype.slice.call(sliderItems);
+var currentLocation = sliderItemsArray.indexOf(displayedItem) + 1;
+var totalItems = sliderItems.length;
+var paginationElementTotal = document.getElementById('gallery__pagination__total');
+var paginationElementCurrent = document.getElementById('gallery__pagination__current');
+
+// initiate count in pagination
+paginationElementCurrent.innerHTML = currentLocation;
+paginationElementTotal.innerHTML = totalItems;
+
 for (var i = 0; i < galleryBtns.length; i++) {
+
   galleryBtns[i].addEventListener('click', function() {
 
-    console.log("btn clicked");
-    var displayedItem = document.querySelector('.shop-item__gallery__item.is-being-displayed');
-    console.log(displayedItem);
+    var displayedItem = document.querySelector('li.shop-item__gallery__item.is-being-displayed');
 
     // prev btn clicked
     if (this == btnPrevious) {
-      console.log("previous btn clicked");
 
       var previousItem = displayedItem.previousElementSibling;
 
       displayedItem.classList.remove('is-being-displayed');
       previousItem.classList.add('is-being-displayed');
-      console.log(sliderProjection.src);
 
       sliderProjection.src = previousItem.querySelector('.shop-item__gallery__item__visual__img').src;
-      console.log(sliderProjection.src);
 
-      console.log(displayedItem);
-      console.log(previousItem);
-
-      if ( previousItem.previousElementSibling == null ) {
+      if (previousItem.previousElementSibling == null) {
         btnPrevious.classList.add('is-hidden');
       }
 
@@ -103,20 +109,17 @@ for (var i = 0; i < galleryBtns.length; i++) {
         btnNext.classList.remove('is-hidden');
       }
 
+      currentLocation -= 1;
+      paginationElementCurrent.innerHTML = currentLocation;
+
     // next btn clicked
     } else if ( this == btnNext ) {
-      console.log("next btn clicked");
 
       var nextItem = displayedItem.nextElementSibling;
 
       displayedItem.classList.remove('is-being-displayed');
       nextItem.classList.add('is-being-displayed');
-      console.log(sliderProjection.src);
       sliderProjection.src = nextItem.querySelector('.shop-item__gallery__item__visual__img').src;
-      console.log(sliderProjection.src);
-
-      console.log(displayedItem);
-      console.log(nextItem);
 
       if ( nextItem.nextElementSibling == null ) {
         btnNext.classList.add('is-hidden');
@@ -125,6 +128,9 @@ for (var i = 0; i < galleryBtns.length; i++) {
       if (btnPrevious.classList.contains('is-hidden')) {
         btnPrevious.classList.remove('is-hidden');
       }
+
+      currentLocation += 1;
+      paginationElementCurrent.innerHTML = currentLocation;
     }
   });
 }
