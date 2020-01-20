@@ -36,7 +36,6 @@ if (document.querySelector('.shop__list__item') !== null) {
 //gallery
 if (document.querySelector('.show') !== null) {
 
-
   var sliderItems = document.querySelectorAll('.shop-item__gallery__item');
   var sliderProjection = document.getElementById('slider-projection');
   for (var i = 0; i < sliderItems.length; i++) {
@@ -145,11 +144,9 @@ if (document.querySelector('.show') !== null) {
     switch (e.keyCode) {
 
       case 37:
-        console.log('yo');
         var previousItem = displayedItem.previousElementSibling;
 
         if (previousItem !== null) {
-          console.log('niet null');
           displayedItem.classList.remove('is-being-displayed');
           previousItem.classList.add('is-being-displayed');
 
@@ -194,4 +191,7 @@ if (document.querySelector('.show') !== null) {
         break;
     }
   };
+
+  var projectElement = document.querySelectorAll('.shop-item__gallery-controls__btn');
+
 }
