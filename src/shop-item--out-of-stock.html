@@ -57,7 +57,7 @@
       <img id="slider-projection" class="shop-item__visual__img" src="assets/img/watch.jpeg"/>
     </div>
     <ul class="shop-item__gallery">
-      <li class="shop-item__gallery__item js-display-slider-img">
+      <li class="shop-item__gallery__item js-display-slider-img is-being-displayed">
         <div class="shop-item__gallery__item__visual">
           <img class="shop-item__gallery__item__visual__img" src="assets/img/watch.jpeg"/>
         </div>
@@ -87,39 +87,9 @@
   <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
     <div class="wrapper">
       <div class="shop-item__meta">
-        <div class="number-input-group">
-          <input type="number" id="Quantity" name="quantity" value="1" min="1">
-        </div>
-        <div class="product-variants infiniteoptions">
-          <ul class="radio-input-group">
-        	  <li class="{% cycle 'odds': 'odd', 'even' %}">
-        		  <input type="radio" name="id" value="variant" id="blue" checked="checked" />
-      			  <label for="blue" class="radio">
-      				  Blue
-      			  </label>
-            </li>
-            <li class="{% cycle 'odds': 'odd', 'even' %}">
-        		  <input type="radio" name="id" value="variant" id="red"/>
-      			  <label for="red" class="radio">
-      				  Red
-      			  </label>
-            </li>
-            <li class="{% cycle 'odds': 'odd', 'even' %}">
-        		  <input type="radio" name="id" value="variant" id="grey"/>
-      			  <label for="grey" class="radio">
-      				  Grey
-      			  </label>
-            </li>
-            <li>
-      			  <input type="radio" name="id" value="variant" id="unavailable" disabled="disabled" />
-      			  <label for="unavailable" class="radio">
-      				  Unavailable
-      			  </label>
-        	  </li>
-          </ul>
-        </div>
-        <div class="add-to-cart-group">
-          <button class="cta">Add to shopping cart</button>
+        <div class="shop-item__meta__status">
+          <p class="shop-item__meta__status__message">We're sorry but this item is sold out.</p>
+          <a href="index.html" class="shop-item__meta__status__btn cta">Browse shop</a>
         </div>
       </div>
       <div class="shop-item__text">

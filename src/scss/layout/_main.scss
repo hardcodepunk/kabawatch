@@ -605,6 +605,9 @@ article {
           font-size: 10px;
           line-height: 17px;
         }
+        &__status {
+          text-transform: uppercase;
+        }
       }
     }
   }
@@ -646,6 +649,13 @@ article {
   }
   &__meta {
     margin-bottom: 50px;
+    &__status {
+      text-align: center;
+      min-height: 100px;
+      &__message {
+        margin-bottom: 20px;
+      }
+    }
   }
   &__visual {
     width: 100%;
