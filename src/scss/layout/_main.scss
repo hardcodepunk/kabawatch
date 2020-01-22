@@ -3,7 +3,7 @@
  */
 
 .wrapper {
-  padding: 0 5%;
+  padding: 0 20px;
   width: 100%;
 }
 
@@ -425,6 +425,7 @@ article {
             border: 1px solid #000;
             color: #fff;
             margin-top: 20px;
+            display: inline-block;
           }
         }
         &__tools {
@@ -485,6 +486,10 @@ article {
       }
     }
   }
+}
+
+.cart--empty {
+  text-align: center;
 }
 
 .open-menu {
