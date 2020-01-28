@@ -591,15 +591,29 @@ article {
       display: flex;
       flex-direction: column;
       padding: 20px;
-      width: 50%;
+      width: 100%;
       &__visual {
         width: 100%;
         max-height: 100%;
         margin-bottom: 20px;
+        position: relative;
         &:before {
           content: '';
           float: left;
           padding-top: 66.66%;
+        }
+        .tags {
+          background: #fff;
+          top: 7px;
+          right: 0;
+          position: absolute;
+          display: flex;
+          &__tag {
+            font-size: 10px;
+            text-transform: uppercase;
+            font-family: 'FFMarkWebProBold';
+            padding: 7px 14px;
+          }
         }
       }
       &__text {
@@ -607,8 +621,8 @@ article {
           margin-bottom: 14px;
         }
         p {
-          font-size: 10px;
-          line-height: 17px;
+          font-size: 12px;
+          line-height: 20px;
         }
         &__status {
           text-transform: uppercase;
